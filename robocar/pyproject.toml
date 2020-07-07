@@ -9,6 +9,7 @@ license = "MIT"
 python = "^3.7"
 picamera = "^1.13"
 numpy = "^1.19.0"
+tornado = "^6.0.4"
 
 [tool.poetry.dev-dependencies]
 
