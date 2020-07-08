@@ -5,6 +5,10 @@ Inspired by Donkey Car.
 
 `io-board` contains files and source code for the Atmega328 on the IO control board.
 
-`robocar` contains code that runs on the Raspberry pi on the Robocar
+`robocar` contains the Robocar software, written in Python
 
-`trainer` contains models for training the robocar on a host computer.
+`app` contains the Vue app that the car serves
+
+`trainer` contains the program for training bahavioural cloning and reinforcement learning models for the car.
+
+`scripts` contains useful scripts for installing software, etc.
