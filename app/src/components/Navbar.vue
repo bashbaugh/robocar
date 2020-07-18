@@ -21,13 +21,13 @@
             <b-icon-power></b-icon-power>
           </template>
           <b-dropdown-item href="#">Shutdown</b-dropdown-item>
-          <b-dropdown-item href="#">Sign out</b-dropdown-item>
+          <!--<b-dropdown-item href="#">Sign out</b-dropdown-item>-->
         </b-nav-item-dropdown>
 
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
-</div>
+</div> 
 </template>
 
 <script>

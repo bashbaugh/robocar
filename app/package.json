@@ -10,6 +10,7 @@
     "bootstrap": "^4.5.0",
     "bootstrap-vue": "^2.15.0",
     "core-js": "^3.6.5",
+    "nipplejs": "^0.8.5",
     "vue": "^2.6.11"
   },
   "devDependencies": {

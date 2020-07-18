@@ -5000,6 +5000,11 @@ nice-try@^1.0.4:
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
 
+nipplejs@^0.8.5:
+  version "0.8.5"
+  resolved "https://registry.yarnpkg.com/nipplejs/-/nipplejs-0.8.5.tgz#9b16bd1fc70afadc35b09355b86dad65d863bafa"
+  integrity sha512-2G7warzUh4jIdmzSIDRCeXJUl/QrZyJ0QwFgI0V1lM34HLNsIqEX6uY0NY4V3wBDHNsub3me1cbFb/FJpWE/5g==
+
 no-case@^2.2.0:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/no-case/-/no-case-2.3.2.tgz#60b813396be39b3f1288a4c1ed5d1e7d28b464ac"
