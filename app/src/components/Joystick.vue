@@ -1,5 +1,6 @@
 <template>
-<div class="py-3">
+<div>
+  <h5><u>Joystick</u></h5>
   <div id="joystick-container"></div>
 </div>
 </template>
@@ -13,7 +14,9 @@ export default {
     const manager = nipplejs.create({
       zone: document.getElementById('joystick-container'),
       color: '#ffb057',
-      size: 100
+      size: 100,
+      mode: 'semi',
+      catchDistance: 100
     })
   }
 }
@@ -22,8 +25,9 @@ export default {
 <style>
 #joystick-container {
   position: relative;
-  width: 500px;
-  height: 500px;
-  border: 1px solid blue;
+  width: 100%;
+  height: 400px;
+  border: 2px solid #999999;
+  border-radius: 8px;
 }
 </style>

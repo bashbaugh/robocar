@@ -13,6 +13,10 @@
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
 
+        <b-navbar-nav>
+        <b-nav-item href="#" v-b-modal.about-modal>About</b-nav-item>
+      </b-navbar-nav>
+
         <b-nav-item-dropdown text="Options" right>
         </b-nav-item-dropdown>
 
@@ -27,7 +31,14 @@
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
-</div> 
+
+  <b-modal id="about-modal" title="Robocar Control Panel" centered>
+    <p>This is the Robocar control panel</p>
+    <template v-slot:modal-footer>
+     <a href="https://github.com/scitronboy/robocar" target="_blank">https://github.com/scitronboy/robocar</a>
+    </template>
+  </b-modal>
+</div>
 </template>
 
 <script>

@@ -1,7 +1,7 @@
 import os
 import logging
 
-# Project location, don't change this:
+# Robocar location, don't change this:
 SRC_DIR = os.path.dirname(os.path.realpath(__file__))
 
 # Logging

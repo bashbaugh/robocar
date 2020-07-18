@@ -11,6 +11,7 @@
     "bootstrap-vue": "^2.15.0",
     "core-js": "^3.6.5",
     "nipplejs": "^0.8.5",
+    "socket.io-client": "^2.3.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {
