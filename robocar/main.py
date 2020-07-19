@@ -1,5 +1,5 @@
 from car_io import CarIO
-from web_interface import WebInterface
+from web_interface import startWebInterface
 from logger import logger
 
 class Robocar:
@@ -9,6 +9,6 @@ class Robocar:
         self.io = CarIO()
         self.actuator = self.io.actuator
 
-        self.webi = WebInterface()
+        self.app = startWebInterface(self)
 
 car = Robocar()

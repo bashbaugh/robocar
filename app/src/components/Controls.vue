@@ -18,9 +18,9 @@ export default {
       }
     }
   },
-  methods: {
-    setControl(control, setting) {
-      self.$emit('sendWebsocketMessage', )
+  watch: {
+    controlState(controls, oldControls) {
+      self.$emit('sendWebsocketUpdate', {'controls': controls})
     }
   }
 }

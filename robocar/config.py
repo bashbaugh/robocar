@@ -11,3 +11,6 @@ LOGGING_DATE_FORMAT = '%d %H:%M:%S' # Log message date format
 LOGGING_BACKUP_COUNT = 3 # Number of log files
 LOG_FILE_MAX_BYTES = 6000 # Max bytes per log file
 LOGS_DIR = '/home/pi/car_logs' # Where to keep logs
+
+# App
+APP_PORT = 80 # 80 is standard HTTP, so there's no need to append a port number to the raspberry pi's IP address.

@@ -8,7 +8,7 @@
           <Joystick />
         </div>
         <div class="col-md-4">
-          <Controls @sendWebsocketMessage="sendWebsocketMessage" />
+          <Controls @sendWebsocketUpdate="sendWebsocketMessage" />
         </div>
       </div>
     </div>
@@ -23,12 +23,11 @@
 </template>
 
 <script>
-import io from 'socket.io-client'
 import Navbar from './components/Navbar'
 import Joystick from './components/Joystick'
 import Controls from './components/Controls'
 
-const socket = io()
+const socket = new WebSocket('ws://' + location.host + '/carsocket')
 
 export default {
   name: 'App',
@@ -44,13 +43,13 @@ export default {
     }
   },
   mounted() {
-    socket.on('connect', () => {
+    socket.onopen = (e) => {
       this.ready = true
-    })
+    }
   },
   methods: {
-    sendWebsocketMessage() {
-
+    sendWebsocketMessage(data) {
+      socket.send(JSON.stringify(data))
     }
   }
 }

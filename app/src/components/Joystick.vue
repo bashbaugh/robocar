@@ -14,9 +14,9 @@ export default {
     const manager = nipplejs.create({
       zone: document.getElementById('joystick-container'),
       color: '#ffb057',
-      size: 100,
+      size: 200,
       mode: 'semi',
-      catchDistance: 100
+      catchDistance: 200
     })
   }
 }
