@@ -3,7 +3,7 @@ My voice-controlled model self-driving car-robot
 
 Inspired by Donkey Car.
 
-`io-board` contains files and source code for the Atmega328 on the IO control board.
+`io-board` contains files and source code for the Atmega328 on the IO control board. The schematic and PCB files [can be found here](https://easyeda.com/scitronboy/model-self-driving-car).
 
 `robocar` contains the Robocar software, written in Python
 
