@@ -1,1 +1,1 @@
-*/build-uno # don't include arduino build dirs
+*/build-uno/ # don't include arduino build dirs
