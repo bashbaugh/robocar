@@ -1,3 +1,6 @@
+# Arduino build dirs
+/**/build-uno
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
