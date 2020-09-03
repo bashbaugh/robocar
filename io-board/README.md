@@ -1,6 +1,11 @@
-## Programming the Atmega328p
+## Programming the Atmega328p from Raspberry Pi
 
-Install arduino and avrdude with ./install.sh
+Install arduino and avrdude with 
+
+    sudo apt update
+    sudo apt install arduino arduino-mk avrdude -y
+    
+Make sure to enable SPI from interfacing options in raspi-config
 
 #### Wiring
 
@@ -12,11 +17,11 @@ Check connections from RPi by running
 
     sudo avrdude -c linuxspi -p m328p -P /dev/spidev0.0 -b 200000
 
-You should get a device signature. If not check connections.
+You should get a valid device signature. If not check connections.
 
 #### Compile and upload
 
-Run `make` from one of the directories to compile the code for the Atmega. Then, run
+Run `make` from one of the directories such as `blink-test` to compile the code for the Atmega. Then, run
 
     sudo avrdude -p m328p -c linuxspi -P /dev/spidev0.0 -e -U flash:w:build-uno/dir-name.hex -b 200000
 
