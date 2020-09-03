@@ -9,7 +9,7 @@ Make sure to enable SPI from interfacing options in raspi-config
 
 #### Wiring
 
-DO NOT CONNECT ATMEGA TO 5V DURING PROGRAM UPLOAD, rpi GPIO pins can only handle 3.3v. Connext Atmega VCC, AVCC, AREF to RPi 3v3, and ground to RPi ground. Atmega reset pin should be pulled up by a 10k resistor and connected to GPIO 25. Connect MISO, MOSI and SCK on Atmega to MISO, MOSI, and SCLK on Rpi. 
+DO NOT CONNECT ATMEGA TO 5V DURING PROGRAM UPLOAD, rpi GPIO pins can only handle 3.3v. Connext Atmega VCC, AVCC, AREF to RPi 3v3, and ground to RPi ground. Atmega reset pin should be pulled up by a 10k resistor and connected to GPIO 25. Connect MISO, MOSI and SCK on Atmega to MISO, MOSI, and SCLK on Rpi. You might also need to attach a 16mhz crystal to XTAL1 and XTAL2 (the clock pins) on the ATmega.
 
 Note: Because we are programming at 3.3V we have to lower the baud rate to 200000.
 
